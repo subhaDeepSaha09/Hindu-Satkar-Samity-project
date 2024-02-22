@@ -8,7 +8,7 @@ body .hero .navigation-1 {
   background: #424242;
 }
 body .hero .navigation-2 {
-  background: #04A8DC;
+  background: #04a8dc;
 }
 body .hero .banner #main-carousel .item {
   position: relative;
@@ -69,7 +69,7 @@ body .hero .wraper .circle {
   margin: 10vh auto;
 }
 body .about-us {
-  background-color: #04A8DC;
+  background-color: #04a8dc;
   color: #fff;
   text-align: center;
   padding: 4rem 0;
@@ -193,9 +193,9 @@ body .contact .container .row .form-box .contact-form .buttons-grp {
   margin-top: 15px;
 }
 body .contact .container .row .form-box .contact-form .buttons-grp .button-1 {
-  outline: 1px solid #04A8DC;
+  outline: 1px solid #04a8dc;
   padding: 12px 50px;
-  background-color: #04A8DC;
+  background-color: #04a8dc;
   color: #fff;
   border-radius: 6px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.6);
@@ -210,10 +210,23 @@ body .contact .container .row .form-box .contact-form .buttons-grp .button-2 {
   font-weight: 500;
 }
 body .footer {
-  background-color: #04A8DC;
+  background-color: #04a8dc;
   color: #fff;
+}
+body .footer .container-fluid {
+  padding: 5rem 0;
 }
 body .footer .container-fluid .content-box {
   display: flex;
   justify-content: space-between;
+}
+body .footer .container-fluid .content-box .brand-details h5 {
+  padding-top: 0;
+}
+body .footer .container-fluid .content-box .brand-details p {
+  padding-top: 1rem;
+}
+body .footer .container-fluid .content-box .nav-links .row-box .col a {
+  color: #fff;
+  text-decoration: none;
 }/*# sourceMappingURL=style.css.map */
