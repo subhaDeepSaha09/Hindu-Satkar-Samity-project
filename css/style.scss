@@ -11,7 +11,50 @@ body {
     }
     .navigation-2 {
       background: #04a8dc;
+
+      .nav-content {
+        .navbar-nav {
+          .dropdown {
+
+            .megamenu {
+              width: 30rem;
+              padding: 2rem;
+              .row {
+                .col-megamenu {
+                  padding: 0 1rem;
+
+                  .list-unstyled {
+                    li {
+                      margin: 1rem  0;
+
+                      a {
+                        color: #000000;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+
+            .classic-menu {
+              width: 15rem;
+              padding: 2rem;
+
+              .list-unstyled {
+                li {
+                  margin: 1rem  0;
+
+                  a {
+                    color: #000000;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
     }
+
     .banner {
       #main-carousel {
         .item {

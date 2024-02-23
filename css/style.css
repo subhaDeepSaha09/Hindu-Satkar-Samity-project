@@ -10,6 +10,29 @@ body .hero .navigation-1 {
 body .hero .navigation-2 {
   background: #04a8dc;
 }
+body .hero .navigation-2 .nav-content .navbar-nav .dropdown .megamenu {
+  width: 30rem;
+  padding: 2rem;
+}
+body .hero .navigation-2 .nav-content .navbar-nav .dropdown .megamenu .row .col-megamenu {
+  padding: 0 1rem;
+}
+body .hero .navigation-2 .nav-content .navbar-nav .dropdown .megamenu .row .col-megamenu .list-unstyled li {
+  margin: 1rem 0;
+}
+body .hero .navigation-2 .nav-content .navbar-nav .dropdown .megamenu .row .col-megamenu .list-unstyled li a {
+  color: #000000;
+}
+body .hero .navigation-2 .nav-content .navbar-nav .dropdown .classic-menu {
+  width: 15rem;
+  padding: 2rem;
+}
+body .hero .navigation-2 .nav-content .navbar-nav .dropdown .classic-menu .list-unstyled li {
+  margin: 1rem 0;
+}
+body .hero .navigation-2 .nav-content .navbar-nav .dropdown .classic-menu .list-unstyled li a {
+  color: #000000;
+}
 body .hero .banner #main-carousel .item {
   position: relative;
   height: 95vh;
