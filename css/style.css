@@ -12,6 +12,10 @@ body .hero .navigation-1 {
 body .hero .navigation-2 {
   background: #04a8dc;
 }
+body .hero .navigation-2 .navbar-brand {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 600;
+}
 body .hero .navigation-2 .nav-content .navbar-nav .dropdown .megamenu {
   width: 30rem;
   padding: 2rem;
@@ -102,7 +106,12 @@ body .about-us {
   background-color: #04a8dc;
   color: #fff;
   text-align: center;
-  padding: 4rem 0;
+  padding: 5rem 0;
+}
+body .about-us .sec-head {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 3rem;
+  font-weight: 600;
 }
 body .about-us .wraper {
   justify-content: center;
@@ -118,9 +127,12 @@ body .about-us .wraper p {
 body .services {
   padding: 7rem 0;
 }
-body .services .service-title {
+body .services .sec-head {
   text-align: center;
   padding-bottom: 5rem;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 3rem;
+  font-weight: 600;
 }
 body .services .wraper .services {
   padding: 2rem 0;
@@ -131,11 +143,16 @@ body .services .wraper .services .row .coloumn-right {
 body .client_section {
   padding: 4rem 0;
 }
-body .client_section .heading_container {
+body .client_section .sec-head {
   padding-top: 2rem;
   align-items: center;
   text-align: center;
   margin-bottom: 45px;
+  font-weight: 600;
+}
+body .client_section .sec-head h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 3rem;
 }
 body .client_section .carousel-wrap .box-container {
   padding: 20px;
@@ -176,19 +193,30 @@ body .sec-spech .container-fluid .row .text-box {
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin-top: 3rem;
 }
-body .sec-spech .container-fluid .row .text-box h2 {
+body .sec-spech .container-fluid .row .text-box .sec-head {
+  font-family: "Cormorant Garamond", serif;
   font-size: 3rem;
-  padding-bottom: 2rem;
+  font-weight: 600;
 }
 body .sec-spech .container-fluid .row .text-box .para {
-  max-width: 100rem;
+  max-width: 80rem;
+  margin-top: 3rem;
+}
+@media only screen and (max-width: 600px) {
+  body .sec-spech .container-fluid .row .text-box {
+    margin: 0 auto;
+  }
 }
 body .contact .container {
   text-align: center;
   padding: 3rem 0;
 }
-body .contact .container .heading-container {
+body .contact .container .sec-head {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 3rem;
+  font-weight: 600;
   margin: 4rem auto;
   align-items: center;
   text-align: center;
@@ -260,6 +288,11 @@ body .footer .container-fluid .content-box {
   display: flex;
   justify-content: space-between;
 }
+body .footer .container-fluid .content-box .brand-details .sec-head {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 3rem;
+  font-weight: 600;
+}
 body .footer .container-fluid .content-box .brand-details h5 {
   padding-top: 0;
 }
@@ -269,4 +302,32 @@ body .footer .container-fluid .content-box .brand-details p {
 body .footer .container-fluid .content-box .nav-links .row-box .col a {
   color: #fff;
   text-decoration: none;
+}
+body .all-rights {
+  background-color: #04a8dc;
+}
+body .all-rights .container-fluid .line {
+  height: 1px;
+  width: 95%;
+  margin: 0 auto;
+  background: #14213d;
+}
+body .all-rights .container-fluid .rights {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1% 2.5%;
+  color: #fcfcfc;
+}
+body .all-rights .container-fluid .rights .right-links {
+  text-decoration: none;
+}
+body .all-rights .container-fluid .rights .right-links a {
+  padding: 0 1.5rem;
+  color: #fcfcfc;
+}
+@media only screen and (max-width: 600px) {
+  body .all-rights .container-fluid .rights {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=style.css.map */

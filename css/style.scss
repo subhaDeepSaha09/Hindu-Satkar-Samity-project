@@ -9,7 +9,7 @@ $font-main: "Cormorant Garamond", serif;
 $font-body: "Roboto", sans-serif;
 
 $fs-xl: 5rem;
-$fs-md: 2rem;
+$fs-md: 3rem;
 $fs-sm: 0.75rem;
 
 @media screen and (max-width: 600px) {
@@ -27,12 +27,18 @@ $fs-sm: 0.75rem;
 }
 
 body {
+  $font-body: "Roboto", sans-serif; 
   .hero {
     .navigation-1 {
       background: #424242;
     }
     .navigation-2 {
       background: #04a8dc;
+
+      .navbar-brand {
+        font-family: $font-main;
+        font-weight: 600;
+      }
 
       .nav-content {
         .navbar-nav {
@@ -167,7 +173,13 @@ body {
     background-color: #04a8dc;
     color: #fff;
     text-align: center;
-    padding: 4rem 0;
+    padding: 5rem 0;
+
+    .sec-head {
+      font-family: $font-main;
+      font-size: $fs-md;
+      font-weight: 600;
+    }
 
     .wraper {
       justify-content: center;
@@ -187,9 +199,12 @@ body {
   .services {
     padding: 7rem 0;
 
-    .service-title {
+    .sec-head {
       text-align: center;
       padding-bottom: 5rem;
+      font-family: $font-main;
+      font-size: $fs-md;
+      font-weight: 600;
     }
 
     .wraper {
@@ -210,11 +225,17 @@ body {
   .client_section {
     padding: 4rem 0;
 
-    .heading_container {
+    .sec-head {
       padding-top: 2rem;
       align-items: center;
       text-align: center;
       margin-bottom: 45px;
+      font-weight: 600;
+
+      h2 {
+        font-family: $font-main;
+        font-size: $fs-md;
+      }
     }
 
     .carousel-wrap {
@@ -268,14 +289,21 @@ body {
           justify-content: center;
           align-items: center;
           text-align: center;
+          margin-top: 3rem;
 
-          h2 {
-            font-size: 3rem;
-            padding-bottom: 2rem;
+          .sec-head {
+            font-family: $font-main;
+            font-size: $fs-md;
+            font-weight: 600;
           }
 
           .para {
-            max-width: 100rem;
+            max-width: 80rem;
+            margin-top: 3rem;
+          }
+
+          @media only screen and (max-width: 600px) {
+            margin: 0 auto;
           }
         }
       }
@@ -289,7 +317,10 @@ body {
       text-align: center;
       padding: 3rem 0;
 
-      .heading-container {
+      .sec-head {
+        font-family: $font-main;
+        font-size: $fs-md;
+        font-weight: 600;
         margin: 4rem auto;
         align-items: center;
         text-align: center;
@@ -363,7 +394,7 @@ body {
   }
 
   .footer {
-    background-color: #04a8dc;
+    background-color: $col-main;
     color: #fff;
     .container-fluid {
       padding: 5rem 0;
@@ -371,6 +402,11 @@ body {
         display: flex;
         justify-content: space-between;
         .brand-details {
+          .sec-head {
+            font-family: $font-main;
+            font-size: $fs-md;
+            font-weight: 600;
+          }
           h5 {
             padding-top: 0;
           }
@@ -389,6 +425,40 @@ body {
               }
             }
           }
+        }
+      }
+    }
+  }
+
+  .all-rights {
+    background-color: $col-main;
+
+    .container-fluid {
+      .line {
+        height: 1px;
+        width: 95%;
+        margin: 0 auto;
+        background: $col-dark;
+      }
+
+      .rights {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1% 2.5%;
+        color: $col-white;
+
+        .right-links {
+          text-decoration: none;
+
+          a {
+            padding: 0 1.5rem;
+            color: $col-white;
+          }
+        }
+
+        @media only screen and (max-width: 600px) {
+          flex-direction: column;
         }
       }
     }
