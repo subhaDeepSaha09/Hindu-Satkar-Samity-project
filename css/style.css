@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -35,22 +37,28 @@ body .hero .navigation-2 .nav-content .navbar-nav .dropdown .classic-menu .list-
 }
 body .hero .banner #main-carousel .item {
   position: relative;
-  height: 95vh;
+  height: 90%;
   width: 100%;
-  background: url(/images/bg.png) no-repeat center/cover;
   display: flex;
   justify-content: center;
   align-items: centers;
 }
+body .hero .banner #main-carousel .item img {
+  height: 90vh;
+  width: 100%;
+  z-index: -1;
+}
 body .hero .banner #main-carousel .item .overlay-content {
   position: absolute;
-  top: 35%;
+  top: 34%;
   text-align: center;
   color: #fff;
   z-index: 1;
 }
 body .hero .banner #main-carousel .item .overlay-content h1 {
-  font-size: 4rem;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 5rem;
+  font-weight: 900;
 }
 body .hero .banner #main-carousel .item .overlay-content p {
   font-weight: 300;
@@ -63,11 +71,10 @@ body .hero .banner #main-carousel .item .overlay-content .drop-down-arrow {
   width: 4rem;
   margin: 8rem auto 0;
 }
-body .hero .banner #main-carousel .item-2 {
-  background: url(/images/bg-2.png) no-repeat center/cover;
-}
-body .hero .banner #main-carousel .item-3 {
-  background: url(/images/bg-3.png) no-repeat center/cover;
+@media only screen and (max-width: 600px) {
+  body .hero .banner #main-carousel .item .overlay-content {
+    top: 20%;
+  }
 }
 body .hero .wraper {
   position: relative;
@@ -186,6 +193,16 @@ body .contact .container .heading-container {
   align-items: center;
   text-align: center;
   margin-bottom: 2rem;
+}
+body .contact .container .row .map-box iframe {
+  width: 27vw;
+  height: 40vh;
+}
+@media only screen and (max-width: 600px) {
+  body .contact .container .row .map-box iframe {
+    width: 90vw;
+    height: 40vh;
+  }
 }
 body .contact .container .row .form-box .contact-form {
   padding: 0px 25px;

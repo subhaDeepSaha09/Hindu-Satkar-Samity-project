@@ -1,3 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+$col-main: #04a8dc;
+$col-white: #fcfcfc;
+$col-dark: #14213d;
+
+$font-main: "Cormorant Garamond", serif;
+$font-body: "Roboto", sans-serif;
+
+$fs-xl: 5rem;
+$fs-md: 2rem;
+$fs-sm: 0.75rem;
+
+@media screen and (max-width: 600px) {
+  :root {
+    $fs-xl: 3rem;
+    $fs-md: 1.25rem;
+    $fs-sm: 0.75rem;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -15,7 +37,6 @@ body {
       .nav-content {
         .navbar-nav {
           .dropdown {
-
             .megamenu {
               width: 30rem;
               padding: 2rem;
@@ -25,7 +46,7 @@ body {
 
                   .list-unstyled {
                     li {
-                      margin: 1rem  0;
+                      margin: 1rem 0;
 
                       a {
                         color: #000000;
@@ -42,7 +63,7 @@ body {
 
               .list-unstyled {
                 li {
-                  margin: 1rem  0;
+                  margin: 1rem 0;
 
                   a {
                     color: #000000;
@@ -59,22 +80,30 @@ body {
       #main-carousel {
         .item {
           position: relative;
-          height: 95vh;
+          height: 90%;
           width: 100%;
-          background: url(/images/bg.png) no-repeat center / cover;
+          // background: url(/images/bg.png) no-repeat center / cover;
           display: flex;
           justify-content: center;
           align-items: centers;
 
+          img {
+            height: 90vh;
+            width: 100%;
+            z-index: -1;
+          }
+
           .overlay-content {
             position: absolute;
-            top: 35%;
+            top: 34%;
             text-align: center;
             color: #fff;
             z-index: 1;
 
             h1 {
-              font-size: 4rem;
+              font-family: $font-main;
+              font-size: $fs-xl;
+              font-weight: 900;
             }
 
             p {
@@ -90,15 +119,19 @@ body {
               width: 4rem;
               margin: 8rem auto 0;
             }
+
+            @media only screen and (max-width: 600px) {
+              top: 20%;
+            }
           }
         }
 
         .item-2 {
-          background: url(/images/bg-2.png) no-repeat center / cover;
+          // background: url(/images/bg-2.png) no-repeat center / cover;
         }
 
         .item-3 {
-          background: url(/images/bg-3.png) no-repeat center / cover;
+          // background: url(/images/bg-3.png) no-repeat center / cover;
         }
       }
     }
@@ -264,6 +297,17 @@ body {
       }
 
       .row {
+        .map-box {
+          iframe {
+            width: 27vw;
+            height: 40vh;
+
+            @media only screen and (max-width: 600px) {
+              width: 90vw;
+              height: 40vh;
+            }
+          }
+        }
         .form-box {
           .contact-form {
             padding: 0px 25px;
